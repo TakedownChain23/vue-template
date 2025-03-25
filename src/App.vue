@@ -1,30 +1,29 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <VApp>
+    <VMain>
+      <VNavigationDrawer expand-on-hover rail>
+        <VList nav density="compact">
+          <VListItem prepend-icon="mdi-home" color="primary" title="Home" to="/"></VListItem>
+          <VListItem prepend-icon="mdi-information" color="primary" title="Pineapples" to="/pineapples"></VListItem>
+        </VList>
+      </VNavigationDrawer>
+      <RouterView />
+    </VMain>
+  </VApp>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+.v-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
   text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>
