@@ -1,15 +1,15 @@
 <template>
-  <VApp>
-    <VMain>
-      <VNavigationDrawer expand-on-hover rail>
-        <VList nav density="compact">
-          <VListItem prepend-icon="mdi-home" color="primary" title="Home" to="/"></VListItem>
+  <v-app>
+    <v-main>
+      <v-navigation-drawer expand-on-hover rail>
+        <v-list nav density="compact">
+          <v-list-item prepend-icon="mdi-home" color="primary" title="Home" to="/"></v-list-item>
           <VListItem prepend-icon="mdi-information" color="primary" title="Pineapples" to="/pineapples"></VListItem>
-        </VList>
-      </VNavigationDrawer>
+        </v-list>
+      </v-navigation-drawer>
       <RouterView />
-    </VMain>
-  </VApp>
+    </v-main>
+  </v-app>
 </template>
 
 <style>
