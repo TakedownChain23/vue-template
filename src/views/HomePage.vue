@@ -1,16 +1,16 @@
 <template>
-    <VContainer>
+    <v-container>
         <h1 class="heading">Home</h1>
-        <VCard class="small-card">
-            <VCardTitle>Welcome</VCardTitle>
-            <VCardText>
+        <v-card class="small-card">
+            <v-card-title>Welcome</v-card-title>
+            <v-card-text>
                 Welcome to your shiny new Vue project template!
                 You're free to have a look around the website, and then explore the code.
                 Change styles or the theme, add pages and components, store something more useful then pineapples.
                 Enjoy!!
-            </VCardText>
-        </VCard>
-    </VContainer>
+            </v-card-text>
+        </v-card>
+    </v-container>
 </template>
 
 <style scoped>
